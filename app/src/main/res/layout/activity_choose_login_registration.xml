@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="prototype2.example.com.prototype20.ChooseLoginRegistrationActivity"
+    android:orientation="vertical">
+
+     <Button
+         android:id="@+id/login"
+         android:text="Login"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/register"
+        android:text="Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
