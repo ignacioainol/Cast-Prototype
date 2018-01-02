@@ -222,10 +222,17 @@ import java.util.List;
 
 
      public void logoutUser(View view) {
-        mAuth.signOut();
+         mAuth.signOut();
          Intent intent = new Intent(MainActivity.this, ChooseLoginRegistrationActivity.class);
          startActivity(intent);
          finish();
+         return;
+     }
+
+     public void goToSettings(View view) {
+         Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+         intent.putExtra("userSex", userSex);
+         startActivity(intent);
          return;
      }
  }
