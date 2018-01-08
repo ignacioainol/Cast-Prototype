@@ -1,4 +1,4 @@
-package prototype2.example.com.prototype20;
+package prototype2.example.com.prototype20.Cards;
 
 /**
  * Created by ignacioainolrivera on 01-01-18.

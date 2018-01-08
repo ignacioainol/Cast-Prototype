@@ -1,6 +1,5 @@
-package prototype2.example.com.prototype20;
+package prototype2.example.com.prototype20.Cards;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +11,8 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 
 import java.util.List;
+
+import prototype2.example.com.prototype20.R;
 
 /**
  * Created by ignacioainolrivera on 01-01-18.

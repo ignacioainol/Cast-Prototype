@@ -1,12 +1,10 @@
  package prototype2.example.com.prototype20;
 
 import android.content.Intent;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -23,10 +21,14 @@ import com.lorentzos.flingswipe.SwipeFlingAdapterView;
 import java.util.ArrayList;
 import java.util.List;
 
+import prototype2.example.com.prototype20.Cards.arrayAdapter;
+import prototype2.example.com.prototype20.Cards.cards;
+import prototype2.example.com.prototype20.Matches.MatchesActivity;
+
  public class MainActivity extends AppCompatActivity {
 
     private cards cards_data[];
-    private arrayAdapter arrayAdapter;
+    private prototype2.example.com.prototype20.Cards.arrayAdapter arrayAdapter;
     private int i;
 
      private FirebaseAuth mAuth;
@@ -205,6 +207,12 @@ import java.util.List;
 
      public void goToSettings(View view) {
          Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+         startActivity(intent);
+         return;
+     }
+
+     public void goToMatches(View view) {
+         Intent intent = new Intent(MainActivity.this, MatchesActivity.class);
          startActivity(intent);
          return;
      }
